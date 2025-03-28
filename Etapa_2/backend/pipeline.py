@@ -8,12 +8,14 @@ def createPipeline(data):
 
     pipeline = Pipeline([
         ('cleaner', Preprocessing(isTraining=True)),
-        # ('vectorizer', Vectorizer(isTraining=True)),
-        # ('model', Model())
+        ('vectorizer', Vectorizer(isTraining=True)),
+        ('model', Model())
     ])
 
-    pipeline.fit(data)  
-    dump(pipeline, './assets/model.joblib', compress=True)
+    X = data.drop(columns=['Label'])  # solo columnas de entrada
+    y = data['Label'] 
+    pipeline.fit(X, y)
+    dump(pipeline, 'model.joblib', compress=True)
 
 if __name__ == "__main__":
     print("[Pipeline] Pipeline Started")
