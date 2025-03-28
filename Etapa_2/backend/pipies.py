@@ -34,6 +34,7 @@ from sklearn.datasets import make_classification
 from sklearn.metrics import classification_report, f1_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import ConfusionMatrixDisplay
+from sklearn.base import BaseEstimator, TransformerMixin
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -43,135 +44,7 @@ import joblib
 datos = pd.read_csv('fake_news_spanish.csv', sep = ';', encoding = 'utf-8')
 data = datos.copy()
 
-# class Preprocessing():
-#     def __init__(self, isTraining = False):
-#         self.data = data
-#         self.isTraining = isTraining
-        
-#     def remove_non_ascii(self, words):
-#         new_words = []
-#         for word in words:
-#             if word is not None:
-#                 new_word = unicodedata.normalize('NFKD', word).encode('ascii', 'ignore').decode('utf-8', 'ignore')
-#                 new_words.append(new_word)
-#         return new_words
-
-#     def to_lowercase(self, words):
-#         new_words = []
-#         for word in words:
-#             if word is not None:
-#                 new_word = word.lower()
-#                 new_words.append(new_word)
-#         return new_words
-                
-#     def remove_punctuation(self, words):
-#         new_words = []
-#         for word in words:
-#             if word is not None:
-#                 new_word = re.sub(r'[^\w\s]', '', word)
-#                 if new_word != '':
-#                     new_words.append(new_word)
-#         return new_words
-
-#     def replace_numbers(self, words):
-#         p = inflect.engine()
-#         new_words = []
-#         for word in words:
-#             if word.isdigit():
-#                 new_word = p.number_to_words(word)
-#                 new_words.append(new_word)
-        
-#             else:
-#                 new_words.append(word)
-#         return new_words
-
-#     def remove_stopwords(self, words):
-#         """Remove stop words from list of tokenized words"""
-#         new_words = []
-#         stop_words = set(stopwords.words('spanish'))
-
-#         for w in words:
-#             if w not in stop_words:
-#                 new_words.append(w)
-#         return new_words
-
-#     def preprocessing(self, words):
-#         words = to_lowercase(words)
-#         words = replace_numbers(words)
-#         words = remove_punctuation(words)
-#         words = remove_non_ascii(words)
-#         words = remove_stopwords(words)
-#         return words
-
-#     def stem_words(words):
-#         stemmer = LancasterStemmer()
-#         stems = []
-#         for word in words:
-#             stem = stemmer.stem(word)
-#             stems.append(stem)
-#         return stems
-
-#     def lemmatize_verbs(words):
-#         lemmatizer = WordNetLemmatizer()
-#         lemmas = []
-#         for word in words:
-#             lemma = lemmatizer.lemmatize(word, pos='v')
-#             lemmas.append(lemma)
-#         return lemmas
-
-#     def stem_and_lemmatize(words):
-#         stems = stem_words(words)
-#         lemmas = lemmatize_verbs(words)
-#         return stems + lemmas
-
-
-#     def preprocesamiento_completo(data):
-#         data.dropna()
-#         data['Titulo'] = data['Titulo'].fillna(' ')
-#         data = data.drop_duplicates(subset = ['Titulo', 'Descripcion'], keep = 'first')
-#         data['Fecha'] = pd.to_datetime(data['Fecha'], errors='coerce')
-#         data = data.drop(columns='ID')
-#         data['Descripcion'] = data['Descripcion'].apply(contractions.fix)
-#         data['Titulo'] = data['Titulo'].apply(contractions.fix)
-#         data['words_descripcion'] = data['Descripcion'].apply(word_tokenize)
-#         data['words_titulo'] = data['Titulo'].apply(word_tokenize) 
-#         data['words_descripcion'].dropna()
-#         data['words_titulo'].dropna()
-#         data['prep_descripcion'] = data['words_descripcion'].apply(preprocessing)
-#         data['prep_titulo'] = data['words_titulo'].apply(preprocessing)
-#         data['prep_descripcion'] = data['prep_descripcion'].apply(stem_and_lemmatize) 
-#         data['prep_titulo'] = data['prep_titulo'].apply(stem_and_lemmatize)
-#         data['prep_descripcion'] = data['prep_descripcion'].apply(lambda x: ' '.join(map(str, x)))
-#         data['prep_titulo'] = data['prep_titulo'].apply(lambda x: ' '.join(map(str, x)))
-#         data["concatenado"] = data["prep_titulo"] + " " + data["prep_descripcion"]
-        
-#         return data['concatenado', 'Label']
-    
-    
-#     def fit(self, data, target=None):
-#         self.df = data
-#         if self.isTraining:
-           
-#             self.df['Descripcion'] = data['Descripcion'].apply(self.preprocessing)
-  
-#         print('[CleaningTrain] Fitting Finished!!')
-#         return self
-    
-#     def transform(self, data):
-#         del self.df
-#         self.df = data
-#         self.df['Descripcion'] = data['Descripcion'].apply(self.preprocessing)
-#         print('[CleaningTrain] Transformation Finished!!')
-#         return self.df
-    
-#     def predict(self, data):
-#         return self
-
-
-
-from sklearn.base import BaseEstimator, TransformerMixin
-
-class Preprocessing(BaseEstimator, TransformerMixin):
+class Preprocesamiento(BaseEstimator, TransformerMixin):
     def __init__(self, isTraining=False):
         self.data = data
         self.isTraining = isTraining
@@ -198,14 +71,15 @@ class Preprocessing(BaseEstimator, TransformerMixin):
         stop_words = set(stopwords.words('spanish'))
         return [w for w in words if w not in stop_words]
 
-    def preprocessing(self, text:str):
+    def preprocessing(self, text: str):
         words = word_tokenize(text)
         words = self.to_lowercase(words)
         words = self.replace_numbers(words)
         words = self.remove_punctuation(words)
         words = self.remove_non_ascii(words)
         words = self.remove_stopwords(words)
-        return ' '.join(words)
+        return words  
+
 
     def stem_words(self, words):
         stemmer = LancasterStemmer()
@@ -222,7 +96,7 @@ class Preprocessing(BaseEstimator, TransformerMixin):
 
     def fit(self, data, target=None):
         self.df = data.copy()
-        print('[CleaningTrain] Fitting Finished!!')
+        print('Preprocesamiento - Fitting Finished!!')
         return self
 
     def transform(self, data):
@@ -243,9 +117,15 @@ class Preprocessing(BaseEstimator, TransformerMixin):
         df['prep_descripcion'] = df['tokens_descripcion'].apply(lambda x: ' '.join(x))
 
         df['concatenado'] = df['prep_titulo'] + ' ' + df['prep_descripcion']
+        
+    
+        df['concatenado'] = df['concatenado'].fillna('').str.strip()
+        df = df[df['concatenado'] != '']
+        
 
-        print('[CleaningTrain] Transformation Finished!!')
+        print('Preprocesamiento - Transformation Finished!!')
         return df[['concatenado', 'Label']] if 'Label' in df.columns else df[['concatenado']]
+
 
 
     def predict(self, data):
@@ -258,15 +138,22 @@ class Vectorizer:
         self.isTraining = isTraining
         self.vector = None
         self.data = None
-
+    
     def getVectorWeights(self, data):
+        data = data.copy()
+        data['concatenado'] = data['concatenado'].fillna('').str.strip()
+        data = data[data['concatenado'] != '']
+
+        if data.empty:
+            raise ValueError("[Vectorizer] Todos los textos están vacíos después del preprocesamiento.")
+
         vectorizer = TfidfVectorizer(max_features=1000)
         vector = vectorizer.fit_transform(data['concatenado'])
-        vectorizer.get_feature_names_out()
         vect_score = np.asarray(vector.mean(axis=0)).ravel().tolist()
         vect_array = pd.DataFrame({'term': vectorizer.get_feature_names_out(), 'weight': vect_score})
-        vect_array.sort_values(by='weight',ascending=False,inplace=True)
+        vect_array.sort_values(by='weight', ascending=False, inplace=True)
         return vect_array
+
 
     def setImpact(self, df):
         df0 = df[df['Label'] == 0]
@@ -277,99 +164,62 @@ class Vectorizer:
         self.impact4 = self.getVectorWeights(df1)
    
     
-    def fit(self, data , target = None):
-        self.setImpact(data)
-        X =  self.vectorizer.fit_transform(data['concatenado'])
-        self.data = pd.DataFrame(X.todense())
-        self.data['Label'] = data['Label']
-        print('[Vectorizer] Fitting Finished!!')
+    def fit(self, data, y=None):
+        if y is not None:
+            df = data.copy()
+            df['Label'] = y
+            self.setImpact(df)
+        
+        X = self.vectorizer.fit_transform(data['concatenado'])
+        self.data = X  
+        print('Vectorizer - Fitting Finished!!')
         return self
-
+        
     def transform(self, data):
         self.vector = self.vectorizer.transform(data['concatenado'])
-        transformed_data = pd.DataFrame(self.vector, columns=self.vectorizer.get_feature_names_out())
-        if self.isTraining:
-            transformed_data['Label'] = data['Label'].values
-        print('[Vectorizer] Transformation Finished!!')
+
+        print('Vectorizer - Transformation Finished!!')    
         return self.vector
+
+        
         
     def predict(self, data):
         return self 
     
-# class Model():
+class Model():
 
-#     def __init__(self):
-#         self.model = LogisticRegression(C=1, max_iter=1000, penalty='l1', solver='saga', warm_start='True')
-#         self.precision = None
-#         self.recall = None
-#         self.report = None
-#         self.f1 = None
-    
-#     def fit(self, data, target=None):
-#         Y = data['Label']
-#         X = data.drop(['Label'], axis = 1)
-#         X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-#         self.model.fit(X_train, Y_train)
-#         Y_test_predict = self.model.predict(X_test)
-#         self.report = classification_report(Y_test, Y_test_predict)
-#         self.f1 = f1_score(Y_test, Y_test_predict, average='weighted')
-#         self.recall = recall_score(Y_test, Y_test_predict, average='weighted')
-#         self.precision = precision_score(Y_test, Y_test_predict, average='weighted')
-#         print('[Model] Modelo Entrenado')
-#         return self
-    
-#     def transform(self, data):
-#         return data
-    
-#     def predict(self, data):
-#         labels = self.model.predict(data)
-#         probabilities = self.model.predict_proba(data)
-#         prediction = pd.DataFrame(labels, columns=['label'])
-#         for i in range(probabilities.shape[1]):
-#             prediction[f'prob_class_{i}'] = probabilities[:, i]
-#         print('[Model] Predicciones Realizadas')
-#         return prediction
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, f1_score, recall_score, precision_score
-
-class Model:
     def __init__(self):
-        self.model = LogisticRegression(
-            C=1, max_iter=1000, penalty='l1', solver='saga', warm_start=True
-        )
+        self.model = LogisticRegression(C=1, max_iter=1000, penalty='l1', solver='saga', warm_start= True)
         self.precision = None
         self.recall = None
         self.report = None
         self.f1 = None
-
+    
+    
     def fit(self, X, y=None):
-        # y puede venir aparte o estar en una columna separada en el pipeline anterior
         if y is None:
-            raise ValueError("El target (y) no puede ser None")
-        
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.2, random_state=42
-        )
+            raise ValueError("Se necesita el target `y` en el modelo.")
+
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
         self.model.fit(X_train, y_train)
         y_pred = self.model.predict(X_test)
-
         self.report = classification_report(y_test, y_pred)
         self.f1 = f1_score(y_test, y_pred, average='weighted')
         self.recall = recall_score(y_test, y_pred, average='weighted')
         self.precision = precision_score(y_test, y_pred, average='weighted')
-        print('[Model] Modelo Entrenado')
+        print('Modelo Entrenado')
         return self
 
+    
     def transform(self, data):
         return data
-
-    def predict(self, X):
-        labels = self.model.predict(X)
-        probabilities = self.model.predict_proba(X)
+    
+    def predict(self, data):
+        labels = self.model.predict(data)
+        probabilities = self.model.predict_proba(data)
         prediction = pd.DataFrame(labels, columns=['label'])
         for i in range(probabilities.shape[1]):
             prediction[f'prob_class_{i}'] = probabilities[:, i]
-        print('[Model] Predicciones Realizadas')
+        print('Modelo Predicciones Realizadas')
         return prediction
+
