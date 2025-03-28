@@ -8,8 +8,8 @@ def createPipeline(data):
 
     pipeline = Pipeline([
         ('cleaner', Preprocessing(isTraining=True)),
-        ('vectorizer', Vectorizer(isTraining=True)),
-        ('model', Model())
+        # ('vectorizer', Vectorizer(isTraining=True)),
+        # ('model', Model())
     ])
 
     pipeline.fit(data)  

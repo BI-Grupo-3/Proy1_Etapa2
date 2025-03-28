@@ -44,7 +44,7 @@ datos = pd.read_csv('fake_news_spanish.csv', sep = ';', encoding = 'utf-8')
 data = datos.copy()
 
 class Preprocessing():
-    def __init__(self, data):
+    def __init__(self, isTraining = False):
         self.data = data
         self.isTraining = isTraining
         
@@ -146,6 +146,26 @@ class Preprocessing():
         data["concatenado"] = data["prep_titulo"] + " " + data["prep_descripcion"]
         
         return data['concatenado', 'Label']
+    
+    
+    def fit(self, data, target=None):
+        self.df = data
+        if self.isTraining:
+           
+            self.df['concatenado'] = data['concatenado'].apply(self.preprocessing)
+  
+        print('[CleaningTrain] Fitting Finished!!')
+        return self
+    
+    def transform(self, data):
+        del self.df
+        self.df = data
+        self.df['concatenado'] = data['concatenado'].apply(self.preprocessing)
+        print('[CleaningTrain] Transformation Finished!!')
+        return self.df
+    
+    def predict(self, data):
+        return self
 
 
 
@@ -161,7 +181,7 @@ class Vectorizer:
 
     def getVectorWeights(self, data):
         vectorizer = TfidfVectorizer()
-        vector = vectorizer.fit_transform(data['Textos_espanol'])
+        vector = vectorizer.fit_transform(data['concatenado'])
         vectorizer.get_feature_names_out()
         vect_score = np.asarray(vector.mean(axis=0)).ravel().tolist()
         vect_array = pd.DataFrame({'term': vectorizer.get_feature_names_out(), 'weight': vect_score})
@@ -169,9 +189,9 @@ class Vectorizer:
         return vect_array
 
     def setImpact(self, df):
-        df3 = df[df['sdg'] == 3]
-        df4 = df[df['sdg'] == 4]
-        df5 = df[df['sdg'] == 5]
+        df3 = df[df['Label'] == 3]
+        df4 = df[df['Label'] == 4]
+        df5 = df[df['Label'] == 5]
 
         self.impact3 = self.getVectorWeights(df3)
         self.impact4 = self.getVectorWeights(df4)
@@ -179,17 +199,17 @@ class Vectorizer:
     
     def fit(self, data , target = None):
         self.setImpact(data)
-        X =  self.vectorizer.fit_transform(data['Textos_espanol'])
+        X =  self.vectorizer.fit_transform(data['concatenado'])
         self.data = pd.DataFrame(X.todense())
-        self.data['sdg'] = data['sdg']
+        self.data['Label'] = data['Label']
         print('[Vectorizer] Fitting Finished!!')
         return self
 
     def transform(self, data):
-        self.vector = self.vectorizer.transform(data['Textos_espanol'])
+        self.vector = self.vectorizer.transform(data['concatenado'])
         transformed_data = pd.DataFrame(self.vector.todense(), columns=self.vectorizer.get_feature_names_out())
         if self.isTraining:
-            transformed_data['sdg'] = data['sdg'].values
+            transformed_data['Label'] = data['Label'].values
         print('[Vectorizer] Transformation Finished!!')
         return transformed_data
         
