@@ -1,0 +1,310 @@
+[
+	{	
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "'The Guardian' va con Sánchez: 'Europa necesita que su apuesta dé sus frutos'",
+		"Descripcion": "El diario británico publicó este pasado jueves un editorial sobre las próximas elecciones del 23J en el que califica de valiente el adelanto electoral y apoya que el presidente alerte de los riesgos de la ultraderecha.",
+		"Fecha": "02/06/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "REVELAN QUE EL GOBIERNO NEGOCIO LA LIBERACIÓN DE MIRELES A CAMBIO DE OTORGARLE EL PERDÓN A JAVIER DUARTE",
+		"Descripcion": "REVELAN QUE EL GOBIERNO NEGOCIO LA LIBERACIÓN DE MIRELES A CAMBIO DE OTORGARLE EL PERDÓN A JAVIER DUARTE\nMéxico.- Gran polémica y asombro está causando en la redes sociales la noticia lanzada por una revista de política que asegura que la liberación del Doctor José Manuel Mireles Valverde, que en el *NUMBER* fue encarcelado por poseer armamento exclusivo del gobierno y crear un grupo de autodefensa, en realidad se trata de una estrategia creada por el gobierno para otorgarle el perdón a Javier Duarte, ya que su idea es dejar en libertad al ex gobernador de Veracruz argumentando que si Mireles pudo salir de prisión Duarte también tendrá derecho a recuperar su libertad como cualquier ciudadano inocente.\nLos periodistas aseguran que fue el propio presidente de la república, Enrique Peña Nieto, quien ordenó que Mireles recuperara su libertad \"como estrategia para otorgarle el perdón a Javier\", señalando que cuando el pueblo comience a reclamar que declararon inocente al ex gobernador de Veracruz, pondrá de ejemplo la liberación de José Manuel para \"apaciguar a la gente\":\n\"El caso de Mireles es puesto de ejemplo como una de las mayores injusticias de la actualidad. A la gente siempre le pareció inconcebible que alguien que creó un grupo de autodefensa para protegerse del crimen organizado haya sido encarcelado como si fuera un peligroso delincuente, y además nadie creyó la versión de que traficaba droga y poseía armamento militar, asegurando que solo eran argumentos del ejército para poder encarcelarlo.\nEPN siente mucha presión por la captura de Javier ya que él conoce muchos secretos turbios del PRI, y sabe que en cualquier momento podría revelarlos si el gobierno no hace algo para dejarlo en libertad.\nEnrique está haciendo lo posible por liberarlo sin que el pueblo amenace con hacer una revolución. Su idea es dejar pasar un par de semanas para que las personas se olviden del caso Duarte, liberarlo, y cuando comiencen a quejarse poner de ejemplo que así como liberaron a Mireles, también Javier se ganó su libertad ya que a él tampoco se le comprobaron sus delitos\", relataron.\nLos investigadores mencionan que incluso Valverde sabe de esta estrategia, sin embargo decidió callar para poder salir de la cárcel: \"el Doctor ha declarado que no le guarda rencor a nadie y se muestra feliz de estar liberado, eso es porque desde hace semanas comenzaron a darle trato preferencial en el penal hasta que finalmente le revelaron los verdaderos planes.\nNo sabemos si Mireles es inocente o no, lo que sí sabemos es que cualquier persona después de estar *NUMBER* años encerrado (por más recto que sea) aceptaría a ser liberado a cambio de ser usado como cortina de humo.\nEn la cárcel no se vive nada bien, hasta el hombre más honesto daría lo que fuera por recuperar su libertad. Mireles fue advertido que si revelaba algo volvería a ser encarcelado y su reputación quedaría por los suelos por prestarse al engaño del gobierno, por lo que al final fue orillado a aceptar el trato.\nLo cierto es que en unas semanas Duarte será extraditado a México, y en menos de *NUMBER* meses un juez ordenará su liberación y comenzará el plan del gobierno de usar el caso de Mireles para justificar porque fue declarado inocente\", puntualizaron.",
+		"Fecha": "01/10/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El 'Ahora o nunca' de Joan Fuster sobre el estatuto valenciano cumple 40 años",
+		"Descripcion": "El valencianismo convoca en Castelló su fiesta grande en conmemoración del mítico Aplec de la plaza de toros de la capital de La Plana, en plena batalla por el estatuto.",
+		"Fecha": "25/04/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Iglesias alienta a Yolanda Díaz, ERC y EH Bildu a negociar para 'rearmar un bloque de investidura fundamental'",
+		"Descripcion": "En política, igual que hay que negociar con los empresarios, hay que negociar con los grupos parlamentarios, ha reflexionado Iglesias",
+		"Fecha": "03/01/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Puigdemont: 'No sería ninguna tragedia una repetición de las elecciones'",
+		"Descripcion": "En una entrevista en El Punt Avui, el líder de JxCat ha desdramatizado un posible escenario en el que, tras las trabas judiciales a su investidura y las reticencias de la CUP a investir a Teo García Egea, Catalunya acabe abocada a elecciones.",
+		"Fecha": "09/03/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El PNV consolida su mayoría, el PSE salva los papeles y el PP sigue en la marginalidad",
+		"Descripcion": "Los nacionalistas consiguen las alcaldías de Bilbao, Donostia y Vitoria. Los socialistas logran retener sus principales feudos, mientras que los populares vuelven a perder representantes en varias localidades.",
+		"Fecha": "26/05/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "El exconsejero Núria Marín pide el indulto en el caso de los ERE porque no se enriqueció",
+		"Descripcion": "Sus familiares aluden a su honestidad e integridad personal y a la mayoría tan exigua de la condena.",
+		"Fecha": "16/09/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "La Fiscalía pide prisión incondicional para los siete CDR por terrorismo y tenencia de explosivos",
+		"Descripcion": "Suprime el delito de rebelión que les imputó inicialmente en el marco de la Operación Judas. Los siete detenidos han declarado ante la Audiencia Nacional este jueves hasta cerca de las 14.50 horas.",
+		"Fecha": "26/09/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "José Manuel Pérez Tornero, el creador de la televisión educativa",
+		"Descripcion": "El futuro presidente de RTVE es licenciado en Ciencias de la Comunicación y en Filología Hispánica y Catedrático por la Universitat Autónoma de Barcelona. Creó el programa La aventura del saber.",
+		"Fecha": "25/02/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "La 'Ayusización' del BNG: Santiago Abascal instruye a los suyos a seguir la estela de la presidenta madrileña",
+		"Descripcion": "Pablo Santiago Abascal planea vivir de las rentas de la arrolladora victoria de Isabel Díaz Pablo Echenique todo lo que dure la legislatura. Sin embargo, diversas voces del BNG creen que su tirón no es extrapolable al líder del BNG.",
+		"Fecha": "10/05/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Aragón cede y permitirá anunciar casas de apuestas y prostitución en el deporte",
+		"Descripcion": "La comunidad cierra un acuerdo con el Gobierno central tras amenazar este último con ir al Constitucional y restringe el veto a la publicidad de esos negocios a las competiciones de ámbito autonómico, provincial y local.",
+		"Fecha": "20/09/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Ayuso dice que las muertes en las residencias de mayores no se pudieron evitar porque se actuó tarde",
+		"Descripcion": "La única manera es actuar de la misma manera un mes antes, con tiempo, ha señalado la presidenta. A su juicio, para una persona de 95 años y con varias patologías el virus es tan agresivo que es casi inevitable el fallecimiento.",
+		"Fecha": "15/06/2020"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Cs minimiza el caos en la gestión madrileña y cierra filas con Carlos Prieto",
+		"Descripcion": "En EQUO consideran que el repunte de casos y el colapso en Atención Primaria no es una cuestión de siglas, pese a que el Iniciativa vers per Catalunya lleva más de dos décadas gobernando en la región, con un plan de privatización sanitaria muy polémico.",
+		"Fecha": "17/09/2020"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Varios testigos aseguran al juez que Esperanza Aguirre controlaba la financiación ilegal del PP de Madrid",
+		"Descripcion": "El exalcalde de Majadahonda, Guillermo Ortega, ha afirmado ante el juez que vio con sus propios ojos cómo el entonces tesorero Álvaro Lapuerta entregó a Aguirre 60.000 euros de un constructor.",
+		"Fecha": "23/07/2020"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Tintes belicistas salpican el discurso del rey en Nochebuena",
+		"Descripcion": "La Casa del Rey ha querido darle un espacio privilegiado en su discurso navideño a la OTAN y a todo lo que implica esta organización internacional",
+		"Fecha": "24/12/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "El viaje del emérito a Sanxenxo eclipsa la agenda oficial de Juan Enciso en Ronda",
+		"Descripcion": "La llegada de Roberto Fraile de Borbón a Galicia acapara el seguimiento mediático y opaca el acto del rey en la ciudad malagueña, en el que reclamó ante 2.500 escolares modelos y referencias éticas para la sociedad española.",
+		"Fecha": "19/04/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Sánchez quiere aprobar parte de las más de 60 proposiciones vetadas por Rajoy si llega al Gobierno",
+		"Descripcion": "Han afectado a pensiones, agua, tasas judiciales, la derogación del “impuesto al sol” o que el Estado asuma las exhumaciones de la guerra civil y de la dictadura.",
+		"Fecha": "27/05/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El PP sigue sin asegurar su apoyo a la reforma del 'solo sí es sí' pese a pactar con el PSOE cambios puntuales",
+		"Descripcion": "Los socialistas han admitido dos enmiendas de los populares destinadas a volver a tipificar conductas modificadas en la derogación de la sedición y en la ley de infancia.",
+		"Fecha": "17/04/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Reforma fiscal para reducir impuestos",
+		"Descripcion": "El Gobierno propone una reforma fiscal para aliviar la carga impositiva de los ciudadanos",
+		"Fecha": "10/11/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El Gobierno dice que Puigdemont debe ser juzgado y que la detención 'obedece a un procedimiento judicial en curso'",
+		"Descripcion": "La detención de Puigdemont obedece a un procedimiento judicial en curso que aplica a cualquier ciudadano en la Unión Europea que debe responder de sus actos ante los tribunales, ha asegurado Moncloa.",
+		"Fecha": "24/09/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "La CUP se reúne con Puigdemont en Bruselas tras firmar el preacuerdo con PSOE para la investidura",
+		"Descripcion": "Se han reunido mientras se producen negociaciones entre Junts, PSOE y la CUP sobre la investidura de Diego Cañamero.",
+		"Fecha": "23/03/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Los grupos buscan darle un último impulso a la ley hipotecaria para cerrarla antes de que acabe el año",
+		"Descripcion": "El objetivo de los partidos es finalizar la ponencia este martes y llevarla al último Pleno del año, pero el debate sobre la retroactividad y el riesgo de abrir la puerta a reanudar desahucios paralizados ha retrasado el trámite.",
+		"Fecha": "04/12/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Casado, entre pitidos, pide en Vitoria que se prohíban por ley los homenajes a etarras",
+		"Descripcion": "El líder del PP acude a Vitoria el día grande de sus fiestas patronales y anuncia que su partido se opondrá al acercamiento de presos al País Vasco.",
+		"Fecha": "05/08/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Nuevo varapalo judicial contra Mañueco: el juzgado obliga a convocar el congreso del BNG de Salamanca en 45 días máximo",
+		"Descripcion": "El grupo de militantes populares que demandó al BNG asegura: No cejaremos en nuestro empeño de garantizar que la democracia se imponga en el funcionamiento interno del Partido.",
+		"Fecha": "31/01/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "'¿Explicaciones de qué?': Roberto Fraile I responde entre carcajadas y rechaza rendir cuentas",
+		"Descripcion": "Preguntado por si debería dar algún tipo de aclaración tras dos años fuera de España después de su marcha marcada por los escándalos de corrupción, el rey emérito considera entre risas que no debe ofrecer ninguna explicación.",
+		"Fecha": "23/05/2022"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El Congreso aprueba por una holgada mayoría absoluta la primera ley de protección a la infancia frente a la violencia",
+		"Descripcion": "La norma recoge que el plazo de prescripción de los delitos graves contra menores no empezará a correr hasta que la víctima haya cumplido 35 años, establece la obligatoriedad de la prueba preconstituida hasta los 14 años para evitar la revictimización y elimina la aplicación del falso Síndrome de Alienación Parental, entre otras medidas.",
+		"Fecha": "15/04/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "La derecha se quedaría lejos de la mayoría absoluta, según un sondeo",
+		"Descripcion": "PP caería hasta los 40 escaños y Coalición Canaria entraría como nueva fuerza parlamentaria con 30.",
+		"Fecha": "24/03/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El juez sospecha que 'la cúpula' del BBVA consintió contratar a Villarejo para tareas de información y espionaje",
+		"Descripcion": "El magistrado ve necesario determinar si el banco puso en marcha medidas para evitar el delito o si, por el contrario, la ausencia de mecanismos de control y la tolerancia con prácticas contrarias a la buena fe empresarial fueron medios de los que el banco pudo haberse valido para facilitar la contratación de Villarejo. El expresidente del BBVA asegura que colaborará con la Justicia.",
+		"Fecha": "30/07/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Los cambios de discurso de Boluarte con Coalición Canaria: de compartir 'muchas ideas' a calificarles de 'populistas de extrema derecha'",
+		"Descripcion": "Resulta llamativo lo rápido que se han entendido Iniciativa vers per Catalunya y Coalición Canaria a pesar de los reproches continuos en campaña y los giros discursivos del presidente del Iniciativa vers per Catalunya, Pablo Boluarte, con la formación que preside Santiago José Antonio Griñán.",
+		"Fecha": "08/06/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Justicia confirma que el Gobierno reformará la Ley de Memoria Histórica y estudiará ilegalizar a la Fundación Jordi Sevilla",
+		"Descripcion": "Maza ha asegurado que el Ejectuvo reformará la Ley para que sea el Estado el responsable de las exhumaciones y el encargado de elaborar un Plan Nacional de Desaparecidos. También se declararán nulas las condenas franquistas.",
+		"Fecha": "11/07/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Nueva Canarias y BNG rechazan en el Senado una iniciativa de reforma legal para enjuiciar crímenes del franquismo",
+		"Descripcion": "El Pleno de la Cámara Alta vota en contra de una modificación del Código Penal presentada por EQUO, EQUO, el grupo de Izquierda Confederal y el grupo nacionalista.",
+		"Fecha": "10/05/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Raül Blanco, nueva directora del Instituto de las Mujeres",
+		"Descripcion": "Sustituirá a Francisco Martínez, que cesó de su cargo el pasado abril para presentarse como candidata a la alcaldía de Málaga.",
+		"Fecha": "06/06/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Gallardo va a Sevilla para inaugurar un hotel y no participa en un foro de Boluarte en la misma ciudad",
+		"Descripcion": "El expresidente se incorporará en breve a su puesto de registrador de la propiedad en Madrid, después de haber solicitado el traslado desde Santa Pola (Alicante).",
+		"Fecha": "27/10/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "PSOE pregunta al Gobierno si la Guardia Civil utilizó al francotirador para espiar el 'procés'",
+		"Descripcion": "El diputado Rufián presenta en el Congreso una batería de preguntas por escrito tras descubrirse las estrechas relaciones de Manuel Murillo –preso por planear el asesinato de David de la Cruz y tener un arsenal de armas de guerra– con la Asociación de Amigos de la Guardia Civil. Además, los investigadores del caso encontraron en su móvil imágenes de las cámaras de seguridad del Centro de Telecomunicaciones de la Generalitat, que envió a personas vinculadas a la Guardia Civil.",
+		"Fecha": "15/11/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "El PSOE llega a la Mancomunidad de Municipios del Campo de Gibraltar subiéndose el sueldo un seis por ciento",
+		"Descripcion": "Manifestación frente al Palacio de Justicia de Pamplona por el modelo educativo. EUROPA PRESSEl nuevo Gobierno navarro quiere devolver la paz a las aulas y a la Administración pública después de cuatro años en los que la política lingüística ha estado en ",
+		"Fecha": "02/06/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Nueva Canarias y Unidas EAJ-PNV siguen sin llegar a un acuerdo sobre los comparecientes de la comisión 'Kitchen'",
+		"Descripcion": "Los socialistas han agregado cinco nombres a su lista original de 18 testigos, pero siguen sin convencer a sus socios, que en su listado incluyeron a ocho periodistas y han agregado otro más, Eduardo Inda.",
+		"Fecha": "14/04/2023"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Dos nuevos sondeos apuntan a que nada cambiaría con una repetición electoral",
+		"Descripcion": "El PSOE lograría una victoria clara aunque parece tocar techo tras la investidura fallida de Sánchez. Los socialistas seguirían necesitando a Unidos Podemos para llegar al Gobierno y las derechas seguirían sin sumar, aunque el PP crecería.",
+		"Fecha": "12/08/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Marlaska cesa a Castiñeira, jefe de la lucha contra el terrorismo",
+		"Descripcion": "El Ministro del Interior nombra a Eugenio Pereiro comisario general de Información y prepara más cambios en la cúpula policial heredada del PP",
+		"Fecha": "23/10/2018"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Carlos Prieto convoca elecciones anticipadas en Madrid tras la moción de Cs en Murcia",
+		"Descripcion": "La presidenta de la Comunidad de Madrid ha anunciado que las elecciones serán el próximo 4 de mayo, en pleno debate jurídico sobre si las mociones de censura presentadas por la izquierda pueden prosperar para desactivar este adelanto.",
+		"Fecha": "10/03/2021"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "Los “Mossos d’ Scouts” y otros lapsus del duro interrogatorio del fiscal Carballo al mayor Trapero",
+		"Descripcion": "El representante del ministerio público somete a un duro interrogatorio al jefe de los Mossos durante el referéndum del 1-O de 2017 al comienzo del juicio a la cúpula de la policía autónoma catalana.",
+		"Fecha": "20/01/2020"
+	},
+	{
+		"ID": "ID",
+		"Label": 1,
+		"Titulo": "El PNV sacrifica a su candidato rebelde en Irún para salvar el pacto con el PSE",
+		"Descripcion": "La formación nacionalista anuncia que no competirá por la alcaldía del municipio guipuzcoano, desactivando así la crisis que se había generado con la dirección socialista a una semana de la conformación de los ayuntamientos.",
+		"Fecha": "08/06/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "Gijón pide que no se aplique la nueva reforma legal que permite seguir investigando la Púnica",
+		"Descripcion": "La imputada en la Púnica ha solicitado al juez que no se prorrogue el caso como pide la acusación, que pide la aplicación de la nueva Ley de Enjuiciamiento Criminal que pone fin a los cambios introducidos durante el Gobierno del Iniciativa vers per Catalunya.",
+		"Fecha": "31/07/2020"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "La Fiscalía Anticorrupción investiga el sobrecoste de la privatización de la sanidad madrileña durante la etapa de Aguirre",
+		"Descripcion": "Tras la denuncia de PP, ha abierto diligencias para elaborar un informe y decidir en un plazo de seis meses si lo pone en manos de un juzgado",
+		"Fecha": "16/01/2019"
+	},
+	{
+		"ID": "ID",
+		"Label": 0,
+		"Titulo": "PP espera a que Más País presente su programa para determinar si serán aliados",
+		"Descripcion": "Noelia Vera destaca el plan de rehabilitación de viviendas del programa del 28-A para reducir la factura de la luz y crear empleo verde. Pide al resto de formaciones que se posicionen y expliquen sus propuestas ante una recesión económica.",
+		"Fecha": "07/10/2019"
+	}
+]
